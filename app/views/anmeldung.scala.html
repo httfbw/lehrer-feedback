@@ -1,0 +1,22 @@
+@()
+@page("Feedback-App - Anmeldung") {
+<div class="alert alert-primary" role="alert">
+    <h1>Feedbackapp</h1>
+</div>
+<br><h2>Anmeldung</h2>
+
+
+
+<form action="@controllers.routes.Anmeldung.kontrolle" method="post">
+    <label for="Benutzername">Benutzername: <input id="Benutzername" name="Benutzername">
+    </label>
+
+    <br><label for="Passwort">Passwort:
+    <input type="password" id="Passwort" name="Passwort">
+</label>
+
+    <br><br><input type="submit" class="btn btn-primary" value="LOGIN" id="LOGIN">
+
+</form>
+        <!--Eingabe der Anmeldung-->
+}

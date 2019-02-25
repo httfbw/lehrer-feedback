@@ -1,0 +1,20 @@
+@(title:String)(content:Html)
+<!-- saved from url=(0053)file:///C:/Users/Laptop1/Documents/Httf/Homepage.html -->
+<html data-brackets-id="1"><head data-brackets-id="2"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta data-brackets-id="4" http-equiv="X-UA-Compatible" content="IE=edge">
+    <title data-brackets-id="5">@title</title>
+    <meta data-brackets-id="6" name="description" content="die ideale App für Schüler und Lehrer...so macht die Schule Spaß">
+    <link data-brackets-id="7" rel="stylesheet" href='@routes.Assets.versioned("/main.css")'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body data-brackets-id="8">
+@if(flash().get("success")!=null) {
+<div class="alert alert-danger" role="alert">
+    @flash().get("success")
+</div> }
+
+@content
+
+<p><a href="@controllers.routes.Anmeldung.abmeldung()">Abmelden</a></p>
+</body></html>

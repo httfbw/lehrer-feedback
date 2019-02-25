@@ -1,0 +1,24 @@
+@(gut:Int, gehtSo:Int, langweilig:Int, schlecht:Int)
+@page("Feedback-App") {
+    <div class="alert alert-primary" role="alert">
+        <h1>Feedbackapp</h1>
+    </div>
+    <h2>Wie finden die Schüler Ihren Unterricht? </h2>
+    
+        <p>Ihre Schüler bewerten permanent Ihren Unterricht und hier sehen sie das Ergebnis...</p>
+    
+  
+    
+    <table>
+        <tr>
+            <th> </th>
+            <th>Anzahl der Schüler,<br>die Ihren Unterricht <br>so finden </th>
+        </tr>   
+        <tr><td>Gut</td><td>@gut</td></tr>
+        <tr><td>Geht so</td><td>@gehtSo</td></tr>
+        <tr><td>Langweilig</td><td>@langweilig</td></tr>
+        <tr><td>Schlecht</td><td>@schlecht</td></tr>
+    </table>
+    <!--<location.reload()>-->
+<meta http-equiv="refresh" content="10; URL=@controllers.routes.Feedback.feedbacklehrer">
+}

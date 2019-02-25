@@ -1,0 +1,26 @@
+@()
+@page("Feedback-App") {
+<br><div class="alert alert-primary" role="alert">
+  <h1>Feedbackapp</h1>
+</div><h2>Hier könnt ihr euer Feedback abgeben...</h2>
+
+
+<form action="@controllers.routes.Feedback.danke" method="post">
+    <p>Wie findet ihr euren Unterricht im Moment?...Klickt einfach das an, was eurer Meinung nach am besten passt:</p>
+  <fieldset>
+    <input type="radio" id="Gut" name="Feedback" value="3">
+    <label for="Gut"> Gut</label> 
+    <br>
+      <input type="radio" id="Geht so" name="Feedback" value="2">
+        <label for="Geht so"> Geht so</label>
+    <br>
+      <input type="radio" id="Langweilig" name="Feedback" value="1">
+        <label for="Langweilig">Langweilig</label>
+    <br>
+      <input type="radio" id="Schlecht" name="Feedback" value="0">
+      <label for="Schlecht"> Schlecht</label>
+  </fieldset>
+    <br><input type="submit" class="btn btn-primary" value="Absenden">
+</form>
+        <!--Eingabe der Anmeldung-->
+}

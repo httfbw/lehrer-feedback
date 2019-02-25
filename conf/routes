@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                           controllers.HomeController.index
+
+GET  /anmeldung   controllers.Anmeldung.anmeldung(request: Request)
+POST /anmeldung   controllers.Anmeldung.kontrolle(request: Request)
+
+GET /abmeldung controllers.Anmeldung.abmeldung(request: Request)
+
+GET /feedback/schueler controllers.Feedback.feedbackseite(request: Request)
+POST /feedback/schueler controllers.Feedback.danke(request: Request)
+GET /feedback/lehrer controllers.Feedback.feedbacklehrer(request: Request)
+
+# GET /Homepage   controllers.
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
